@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% block title %}Log in{% endblock %}
+
+{% block head %}
+  <link rel="stylesheet" type="text/css" href="/static/wall.css" />
+  <script src="static/elm.js"></script>
+{% endblock %}
+
+{% block content %}
+
+{% if error_msg %}
+
+<div class="error">
+  {{ error_msg }}
+</div>
+{% endif %}
+
+
+<div> 
+    <span class="b"> 
+    <p><b>choses à faire</b></p>
+      <ul class="nav">
+        <li><a href="#AddNewActivity">ajouter une carte</a></li>
+      </ul>
+    </span> 
+
+
+    <span class="b">
+    <p><b>En cours</b></p>
+      <ul class="nav">
+        <li><a href="#AddNewActivity">ajouter une carte</a></li>
+      </ul>
+    </span> 
+
+    <span class="b">
+    <p><b>Terminé</b></p>
+      <ul class="nav">
+        <li><a href="#AddNewActivity">ajouter une carte</a></li>
+      </ul>
+    </span> 
+
+</div>
+{% endblock %}
